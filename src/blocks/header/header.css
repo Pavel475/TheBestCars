@@ -10,6 +10,7 @@
     position: relative;
     overflow: hidden;
     border-bottom: solid 9px #708c96;
+    background-color: #1a1a1a;
 }
 
 @media screen and (max-width: 1024px) {

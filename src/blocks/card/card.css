@@ -6,7 +6,7 @@
     border: solid 5px #f8f8ffba;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px -3px 35px 2px #4c565f9e;
+    box-shadow: 5px -3px 20px 1.5px #3c41449e;
     box-sizing: border-box;
     position: relative;
 }
@@ -17,8 +17,8 @@
 }
 
 .card_approve-delete {
-    border: 5px solid #2fbd2fe0;
-    box-shadow: 5px -3px 35px 2px rgb(37 151 57 / 51%);
+    border: 5px solid #48ad48e0;
+    box-shadow: 5px -3px 15px 1.5px rgb(56 125 68 / 51%);
 }
 
 @media screen and (max-width: 830px) {

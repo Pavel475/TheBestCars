@@ -65,6 +65,7 @@ const popupWithFormSignIn = new PopupWithFormSignIn({
     submit(dataObj) {
         popupWithFormSignIn.closePopup();
         alert('а вот и нет профиля');
+        dataObj = {};
     }
 });
 
@@ -75,6 +76,7 @@ const popupWithFormSignUp = new PopupWithFormSignUp({
     submit(dataObj) {
         popupWithFormSignUp.closePopup();
         alert('а вот и нет профиля');
+        dataObj = {};
     }
 });
 

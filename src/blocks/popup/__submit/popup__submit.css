@@ -5,7 +5,7 @@
     border: solid rgb(158 155 236 / 63%) 3px;
     border-left-width: 4px;
     border-right-width: 4px;
-    background-color: rgb(113 191 162 / 19%);
+    background-color: rgb(161 193 181 / 19%);
     transition: transform 0.3s, background-color 0.25s, border 0.25s;
     font-size: 21px;
 }

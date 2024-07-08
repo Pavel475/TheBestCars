@@ -3,27 +3,23 @@
     height: 100vh;
     background-image: url('../../../images/backG.jpg');
     background-size: cover;
-    background-position: center;
-    filter: blur(9px) sepia(80%) brightness(0.25) saturate(0.5);
-    position: absolute;
-}
-
-.content__background-image_position-fixed-mode {
+    background-position: 100% 60%;
+    filter: blur(9px) sepia(80%) brightness(0.2) saturate(0.5);
     position: fixed;
-    top: 0.0001px;
+    top: 0.1px;
+    z-index: -10;
 }
 
 .content__background-image_delete-theme {
-    filter: blur(7px) sepia(80%) brightness(0.15) saturate(0.7);
+    filter: blur(7px) sepia(80%) brightness(0.11) saturate(0.7);
 }
 
-.content__background-image_position-absolute-mode {
-    position: absolute;
-    bottom: 0.1px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
     .content__background-image {
-        filter: blur(6px) sepia(80%) brightness(0.25) saturate(0.6);
+        filter: blur(6.5px) sepia(80%) brightness(.21) saturate(.5);
+    }
+
+    .content__background-image_delete-theme {
+        filter: blur(6.5px) sepia(80%) brightness(0.11) saturate(0.7);
     }
 }

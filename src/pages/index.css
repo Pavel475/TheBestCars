@@ -65,7 +65,6 @@
 @import url('../blocks/fixed-block/fixed-block.css');
 @import url('../blocks/fixed-block/_visible/fixed-block_visible.css');
 @import url('../blocks/fixed-block/__content/fixed-block__content.css');
-@import url('../blocks/header/__user-auth/_row/header__user-auth_row.css');
 @import url('../blocks/header/__button/_state/header__button_state.css');
 @import url('../blocks/fixed-block/_hidden/fixed-block_hidden.css');
 @import url('../blocks/fixed-block/__user-auth/fixed-block__user-auth.css');

@@ -1,6 +1,6 @@
 .control-grey-background {
     padding: 0.1px;
-    background: rgb(0 0 0 / 0.5);
+    background: rgb(0 0 0 / 0.64);
     position: relative;
     z-index: 5;
 }
