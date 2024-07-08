@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f8f8ffd6;
+    border: solid 5px #f8f8ffba;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px -3px 35px 2px #4c565f9e;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card_delete-theme {
+    box-shadow: 5px -3px 35px 2px #000000a6;
+    border: 5px solid #4d4d4d;
+}
+
+.card_approve-delete {
+    border: 5px solid #2fbd2fe0;
+    box-shadow: 5px -3px 35px 2px rgb(37 151 57 / 51%);
+}
+
+@media screen and (max-width: 830px) {
+    .card {
+        border-radius: 15px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .card {
+        gap: 9px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        gap: 7px;
+    }
+}

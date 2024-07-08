@@ -1,0 +1,48 @@
+.header__user-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__user-auth {
+        gap: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__user-auth {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header__user-auth {
+        gap: 11px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header__user-auth {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: end;
+        align-self: center;
+        gap: 15px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header__user-auth {
+        width: auto;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__user-auth {
+        gap: 10px;
+    }
+}

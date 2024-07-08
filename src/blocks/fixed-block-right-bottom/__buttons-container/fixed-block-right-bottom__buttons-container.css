@@ -1,0 +1,11 @@
+.fixed-block-right-bottom__buttons-container {
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .fixed-block-right-bottom__buttons-container {
+        gap: 15px;
+    }
+}

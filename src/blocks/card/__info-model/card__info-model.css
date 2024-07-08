@@ -1,0 +1,42 @@
+.card__info-model {
+    font-family: 'friendbold_italic', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1135px) {
+    .card__info-model {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .card__info-model {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .card__info-model {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .card__info-model {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .card__info-model {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card__info-model {
+        font-size: 20px;
+    }
+}

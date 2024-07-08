@@ -1,0 +1,42 @@
+.card__info-mark {
+    font-size: 25px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1135px) {
+    .card__info-mark {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .card__info-mark {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .card__info-mark {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .card__info-mark {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .card__info-mark {
+        font-size: 29px;
+        margin-bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card__info-mark {
+        font-size: 25px;
+    }
+}

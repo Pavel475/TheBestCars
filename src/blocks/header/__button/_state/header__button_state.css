@@ -1,0 +1,16 @@
+.header__button_state {
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 450px) {
+    .header__button_state {
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header__button_state {
+        letter-spacing: 0.5px;
+    }
+}

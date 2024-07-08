@@ -1,0 +1,4 @@
+.popup_card-image {
+    background-color: #171a23;
+    transition: visibility 0.48s, opacity 0.48s;
+}

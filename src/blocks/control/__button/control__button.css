@@ -1,0 +1,43 @@
+.control__button {
+    display: inline-block;
+    appearance: none;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #e5e3e3;
+    font-weight: 600;
+    font-size: 18px;
+    transition: transform 0.3s, border 0.2s;
+    border: solid 3px #d7d3d3;
+}
+
+.control__button:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 0.4s;
+    cursor: pointer;
+    border: solid 3px #ffffff;
+}
+
+@media screen and (max-width: 540px) {
+    .control__button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .control__button {
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+}
+
+.control__button:disabled {
+    background-color: #757373;
+    border: solid 3px #c9b8b8e6;
+    filter: brightness(0.75);
+}
+
+.control__button:disabled:hover {
+    cursor: default;
+    transform: scale(1);
+}

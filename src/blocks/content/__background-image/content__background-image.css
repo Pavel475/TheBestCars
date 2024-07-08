@@ -1,0 +1,29 @@
+.content__background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../images/backG.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(9px) sepia(80%) brightness(0.25) saturate(0.5);
+    position: absolute;
+}
+
+.content__background-image_position-fixed-mode {
+    position: fixed;
+    top: 0.0001px;
+}
+
+.content__background-image_delete-theme {
+    filter: blur(7px) sepia(80%) brightness(0.15) saturate(0.7);
+}
+
+.content__background-image_position-absolute-mode {
+    position: absolute;
+    bottom: 0.1px;
+}
+
+@media screen and (max-width: 768px) {
+    .content__background-image {
+        filter: blur(6px) sepia(80%) brightness(0.25) saturate(0.6);
+    }
+}

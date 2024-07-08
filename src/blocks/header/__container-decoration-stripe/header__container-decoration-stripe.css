@@ -1,0 +1,34 @@
+.header__container-decoration-stripe {
+    position: absolute;
+    left: 65%;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__container-decoration-stripe {
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header__container-decoration-stripe {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header__container-decoration-stripe {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header__container-decoration-stripe {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header__container-decoration-stripe {
+        left: -10%;
+    }
+}

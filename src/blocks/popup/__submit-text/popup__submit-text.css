@@ -1,0 +1,5 @@
+.popup__submit-text {
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    transform: skew(50deg);
+}

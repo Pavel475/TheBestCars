@@ -1,0 +1,11 @@
+.control__add-image {
+    width: 14px;
+    height: 14px;
+}
+
+@media screen and (max-width: 400px) {
+    .control__add-image {
+        width: 12px;
+        height: 12px;
+    }
+}

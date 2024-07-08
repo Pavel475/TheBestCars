@@ -1,0 +1,29 @@
+.popup__submit {
+    transform: skew(-50deg);
+    align-self: center;
+    padding: 5px 35px;
+    border: solid rgb(158 155 236 / 63%) 3px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    background-color: rgb(113 191 162 / 19%);
+    transition: transform 0.3s, background-color 0.25s, border 0.25s;
+    font-size: 21px;
+}
+
+.popup__submit:focus {
+    outline: none;
+}
+
+.popup__submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 0.5px #a9a9a9;
+    transform: skew(-50deg) scale(1.01, 1.01);
+    background-color: rgb(210 246 192 / 35%);
+    border-color: rgb(137 210 183 / 47%);
+}
+
+@media screen and (max-width: 500px) {
+    .popup__submit {
+        font-size: 19px;
+    }
+}

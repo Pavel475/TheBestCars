@@ -1,0 +1,12 @@
+.fixed-block__user-auth {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .fixed-block__user-auth {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

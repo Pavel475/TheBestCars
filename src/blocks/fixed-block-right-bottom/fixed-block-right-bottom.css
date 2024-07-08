@@ -1,0 +1,33 @@
+.fixed-block-right-bottom {
+    font-family: 'friendbold', Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-block-right-bottom_absolute-mode {
+    position: absolute;
+}
+
+@media screen and (max-width: 1450px) {
+    .fixed-block-right-bottom {
+        bottom: 20px;
+        right: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .fixed-block-right-bottom {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .fixed-block-right-bottom {
+        bottom: 15px;
+        right: 15px;
+    }
+}

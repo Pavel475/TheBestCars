@@ -1,0 +1,17 @@
+.control {
+    max-width: 1250px;
+    margin: 0 auto;
+    font-family: 'friendbold', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 35px 30px;
+}
+
+@media screen and (max-width: 540px) {
+    .control {
+        padding: 25px 20px;
+    }
+}

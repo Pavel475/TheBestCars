@@ -1,0 +1,5 @@
+.footer__container-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

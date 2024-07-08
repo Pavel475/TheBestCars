@@ -1,0 +1,30 @@
+.fixed-block {
+    font-family: 'friendregular', Arial, sans-serif;
+    position: fixed;
+    z-index: 100;
+    top: -150px;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 0.94);
+    transition: transform .35s ease;
+    padding: 35px 30px;
+    border-bottom: solid 9px #708c96;
+}
+
+@media screen and (max-width: 640px) {
+    .fixed-block {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .fixed-block {
+        padding: 25px 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .fixed-block {
+        padding: 20px 20px 15px;
+    }
+}

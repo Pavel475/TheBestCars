@@ -1,0 +1,12 @@
+.control__buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 540px) {
+    .control__buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

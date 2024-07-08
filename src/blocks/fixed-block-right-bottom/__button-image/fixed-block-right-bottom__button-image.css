@@ -1,0 +1,32 @@
+.fixed-block-right-bottom__button-image {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #8fbde3;
+    align-self: flex-end;
+    transition: opacity 0.28s, background-color 0.18s, transform 0.25s, visibility 0.25s;
+    visibility: hidden;
+    transform: translateY(30px);
+    opacity: 0.001;
+}
+
+.fixed-block-right-bottom__button-image:hover {
+    cursor: pointer;
+    background-color: #beddf7;
+}
+
+@media screen and (max-width: 450px) {
+    .fixed-block-right-bottom__button-image {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .fixed-block-right-bottom__button-image {
+        width: 50px;
+        height: 50px;
+    }
+}
