@@ -49,7 +49,7 @@ export default class Scroll {
 
         this._fixedButtonArrowImage.addEventListener('click', () => {
             window.scrollTo(0, 0);
-        })
+        });
     }
 
     scrollWork() {

@@ -42,14 +42,15 @@
 
 @media screen and (max-width: 430px) {
     .header__logo {
-       width: 140px;
-       height: calc(140px / 2);
+       width: 150px;
+       height: calc(150px / 2);
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 350px) {
     .header__logo {
        width: 130px;
        height: calc(130px / 2);
+       align-self: center;
     }
 }

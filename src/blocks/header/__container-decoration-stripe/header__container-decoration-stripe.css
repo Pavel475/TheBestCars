@@ -17,18 +17,12 @@
 
 @media screen and (max-width: 540px) {
     .header__container-decoration-stripe {
-        left: 10%;
+        left: 7%;
     }
 }
 
 @media screen and (max-width: 430px) {
     .header__container-decoration-stripe {
         left: 0%;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .header__container-decoration-stripe {
-        left: -10%;
     }
 }
