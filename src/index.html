@@ -1,296 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE BEST CARS</title>
-</head>
-<body class="page">
+  </head>
+  <body class="page">
     <div class="page__container">
-        <header class="header">
-            <img class="header__logo" src="<%=require('./images/logoCar.png')%>" alt="здесь должен быть логотип">
-            <h1 class="header__title">Здесь ты сможешь создать гараж своей мечты !</h1>
-            <div class="header__user-auth">
-                <button class="header__button header__button_sign-in">Войти</button>
-                <button class="header__button header__button_registry">Регистрация</button>
+      <header class="header">
+        <img
+          class="header__logo"
+          src="<%=require('./images/logoCar.png')%>"
+          alt="здесь должен быть логотип"
+        />
+        <h1 class="header__title">
+          Здесь ты сможешь создать гараж своей мечты !
+        </h1>
+        <div class="header__user-auth">
+          <button class="header__button header__button_sign-in">Войти</button>
+          <button class="header__button header__button_registry">
+            Регистрация
+          </button>
+        </div>
+        <div class="header__container-decoration-stripe">
+          <div class="header__decoration-stripe"></div>
+          <div
+            class="header__decoration-stripe header__decoration-stripe_right"
+          ></div>
+        </div>
+      </header>
+      <main class="content">
+        <div class="content__background-image"></div>
+        <div class="control-grey-background">
+          <section class="control">
+            <h2 class="control__title">Мой гараж</h2>
+            <div class="control__buttons-container">
+              <button class="control__button control__button_add-card">
+                <img
+                  src="<%=require('./images/plus.svg')%>"
+                  class="control__add-image"
+                  alt="плюс"
+                />
+                Добавить
+              </button>
+              <button class="control__button control__button_delete-card">
+                <img
+                  src="<%=require('./images/Close-Icon.svg')%>"
+                  class="control__minus-image"
+                  alt="крестик"
+                />
+                Убрать
+              </button>
             </div>
-            <div class="header__container-decoration-stripe">
-                <div class="header__decoration-stripe"></div>
-                <div class="header__decoration-stripe header__decoration-stripe_right"></div>
-            </div>
-        </header>
-        <main class="content">
-            <div class="content__background-image"></div>
-            <div class="control-grey-background">
-                <section class="control">
-                    <h2 class="control__title">
-                        Мой гараж
-                    </h2>
-                    <div class="control__buttons-container">
-                        <button class="control__button control__button_add-card">
-                            <img src="<%=require('./images/plus.svg')%>" class="control__add-image" alt="плюс"/>
-                            Добавить
-                        </button>
-                        <button class="control__button control__button_delete-card">
-                            <img src="<%=require('./images/Close-Icon.svg')%>" class="control__minus-image" alt="крестик">
-                            Убрать
-                        </button>
-                    </div>
-                </section>
-            </div>
-            <div class="cards-list">
-            </div>
-            <div class="fixed-block-right-bottom">
-                <button class="fixed-block-right-bottom__button-image">
-                    <img src="<%=require('./images/free-icon-arrow-up.png')%>" class="fixed-block-right-bottom__image-arrow" alt="наверх"/>
-                </button>
-                <div class="fixed-block-right-bottom__buttons-container">
-                    <button class="fixed-block-right-bottom__button-text fixed-block-right-bottom__button-text_delete">
-                        <img src="<%=require('./images/approve.png')%>" class="fixed-block-right-bottom__text-image fixed-block-right-bottom__text-image_approve" alt="удалить"/>
-                        Удалить
-                    </button>
-                    <button class="fixed-block-right-bottom__button-text fixed-block-right-bottom__button-text_cancel">
-                        <img src="<%=require('./images/cancel.png')%>" class="fixed-block-right-bottom__text-image fixed-block-right-bottom__text-image_cancel" alt="отмена"/>
-                        Отмена
-                    </button>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container-content">
-                <div class="footer__list-container">
-                    <h2 class="footer__list-title">
-                        Дополнительные ссылки
-                    </h2>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <p class="footer__text">
-                                Вы можете смотреть тачки на&nbsp;сайте
-                                <a href="https://unsplash.com/" target="_blank" class="footer__link">
-                                    unsplash.com
-                                </a>
-                            </p>
-                        </li>
-                        <li class="footer__list-item">
-                            <p class="footer__text">
-                                Пройдите тест, если не знаете, какую машину хотите, на сайте
-                                <a href="https://testometrika.com/funny/which-car-is-right-for-you/" target="_blank" class="footer__link">
-                                    testometrika.com
-                                </a>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__list-container">
-                    <h2 class="footer__list-title">
-                        Атрибуты сайта
-                    </h2>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <p class="footer__text">
-                                Иконка галочки сайта от
-                                <a class="footer__link" href="https://www.flaticon.com/ru/free-icons/" target="_blank" title="поставить галочку иконки">
-                                    Icon Hubs - Flaticon
-                                </a>
-                            </p>
-                        </li>
-                        <li class="footer__list-item">
-                            <p class="footer__text">
-                                Иконка крестика сайта от
-                                <a class="footer__link" href="https://www.flaticon.com/ru/free-icons/" target="_blank" title="пересекать иконки">
-                                   Freepik - Flaticon
-                                </a>
-                            </p>
-                        </li>
-                        <li class="footer__list-item">
-                            <p class="footer__text">
-                                Логотип сайта от&nbsp;
-                                <a class="footer__link" target="_blank" href="https://ru.freepik.com/free-vector/gradient-car-dealer-logo-template_24489869.htm#query=logo%20car&position=34&from_view=keyword&track=ais&uuid=7e215495-1404-4dc1-a555-017402a6c696">
-                                    Freepik
-                                </a>
-                            </p>
-                        </li>
-                        <li class="footer__list-item">
-                            <p class="footer__text">
-                                Иконка стрелки сайта от
-                                <a class="footer__link" href="https://www.flaticon.com/ru/free-icons/" title="стрела иконки" target="_blank">
-                                    deemakdaksina - Flaticon
-                                </a>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__container-copyright">
-                <p class="footer__copyright">
-                    © 2024. Twinkle Toes
+          </section>
+        </div>
+        <div class="cards-list"></div>
+        <div class="fixed-block-right-bottom">
+          <button class="fixed-block-right-bottom__button-image">
+            <img
+              src="<%=require('./images/free-icon-arrow-up.png')%>"
+              class="fixed-block-right-bottom__image-arrow"
+              alt="наверх"
+            />
+          </button>
+          <div class="fixed-block-right-bottom__buttons-container">
+            <button
+              class="fixed-block-right-bottom__button-text fixed-block-right-bottom__button-text_delete"
+            >
+              <img
+                src="<%=require('./images/approve.png')%>"
+                class="fixed-block-right-bottom__text-image fixed-block-right-bottom__text-image_approve"
+                alt="удалить"
+              />
+              Удалить
+            </button>
+            <button
+              class="fixed-block-right-bottom__button-text fixed-block-right-bottom__button-text_cancel"
+            >
+              <img
+                src="<%=require('./images/cancel.png')%>"
+                class="fixed-block-right-bottom__text-image fixed-block-right-bottom__text-image_cancel"
+                alt="отмена"
+              />
+              Отмена
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container-content">
+          <div class="footer__list-container">
+            <h2 class="footer__list-title">Дополнительные ссылки</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <p class="footer__text">
+                  Вы можете смотреть тачки на&nbsp;сайте
+                  <a
+                    href="https://unsplash.com/"
+                    target="_blank"
+                    class="footer__link"
+                  >
+                    unsplash.com
+                  </a>
                 </p>
-            </div>
-        </footer>
-        <template class="card-template">
-            <div class="card">
-                <img class="card__image" alt="картинка машины" />
-                <div class="card__info">
-                    <h3 class="card__info-mark">
-                    </h3>
-                    <p class="card__info-model">
-                    </p>
-                </div>
-                <button class="card__button-image">
-                </button>
-                <div class="card__dark-overlay">
-                </div>
-            </div>
-        </template>
-        <div class="popup popup_add-form">
-            <div class="popup__style">
-                <form class="popup__form" autocomplete="off">
-                    <h2 class="popup__title">
-                        Добавление тачки
-                    </h2>
-                    <label class="popup__label" for="car-image">
-                        Машина
-                    </label>
-                    <input
-                    class="popup__input"
-                    id="car-image"
-                    type="url"
-                    placeholder="Ссылка на изображение"
-                    required
-                    name="image"
-                    >
-                    <label class="popup__label" for="car-mark">
-                        Марка
-                    </label>
-                    <input
-                    class="popup__input"
-                    id="car-mark"
-                    type="text"
-                    placeholder="Марка машины"
-                    required
-                    name="mark"
-                    >
-                    <label class="popup__label" for="car-model">
-                        Модель
-                    </label>
-                    <input
-                    class="popup__input"
-                    id="car-model"
-                    type="text"
-                    placeholder="Модель машины"
-                    required
-                    name="model"
-                    >
-                    <button class="popup__submit" type="submit">
-                        <p class="popup__submit-text">
-                            Добавить
-                        </p>
-                    </button>
-                </form>
-                <img class="popup__close" src="<%=require('./images/Close-Icon.svg')%>" alt="закрыть"/>
-            </div>
+              </li>
+              <li class="footer__list-item">
+                <p class="footer__text">
+                  Пройдите тест, если не знаете, какую машину хотите, на сайте
+                  <a
+                    href="https://testometrika.com/funny/which-car-is-right-for-you/"
+                    target="_blank"
+                    class="footer__link"
+                  >
+                    testometrika.com
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list-container">
+            <h2 class="footer__list-title">Атрибуты сайта</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <p class="footer__text">
+                  Иконка галочки сайта от
+                  <a
+                    class="footer__link"
+                    href="https://www.flaticon.com/ru/free-icons/"
+                    target="_blank"
+                    title="поставить галочку иконки"
+                  >
+                    Icon Hubs - Flaticon
+                  </a>
+                </p>
+              </li>
+              <li class="footer__list-item">
+                <p class="footer__text">
+                  Иконка крестика сайта от
+                  <a
+                    class="footer__link"
+                    href="https://www.flaticon.com/ru/free-icons/"
+                    target="_blank"
+                    title="пересекать иконки"
+                  >
+                    Freepik - Flaticon
+                  </a>
+                </p>
+              </li>
+              <li class="footer__list-item">
+                <p class="footer__text">
+                  Логотип сайта от&nbsp;
+                  <a
+                    class="footer__link"
+                    target="_blank"
+                    href="https://ru.freepik.com/free-vector/gradient-car-dealer-logo-template_24489869.htm#query=logo%20car&position=34&from_view=keyword&track=ais&uuid=7e215495-1404-4dc1-a555-017402a6c696"
+                  >
+                    Freepik
+                  </a>
+                </p>
+              </li>
+              <li class="footer__list-item">
+                <p class="footer__text">
+                  Иконка стрелки сайта от
+                  <a
+                    class="footer__link"
+                    href="https://www.flaticon.com/ru/free-icons/"
+                    title="стрела иконки"
+                    target="_blank"
+                  >
+                    deemakdaksina - Flaticon
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="popup popup_sign-form">
-            <div class="popup__style">
-                <form class="popup__form" autocomplete="off">
-                    <h2 class="popup__title">
-                        Вход в профиль
-                    </h2>
-                    <label class="popup__label" for="email-sign-in">
-                        Ваша почта
-                    </label>
-                    <input
-                    class="popup__input"
-                    id="email-sign-in"
-                    type="email"
-                    placeholder="Введите почту"
-                    required
-                    >
-                    <label class="popup__label" for="password-sign-in">
-                        Введите пароль
-                    </label>
-                    <input
-                    minlength="8"
-                    class="popup__input"
-                    id="password-sign-in"
-                    type="password"
-                    placeholder="Пароль профиля"
-                    required
-                    >
-                    <button class="popup__submit" type="submit">
-                        <p class="popup__submit-text">
-                            Войти
-                        </p>
-                    </button>
-                </form>
-                <img class="popup__close" src="<%=require('./images/Close-Icon.svg')%>" alt="закрыть"/>
-            </div>
+        <div class="footer__container-copyright">
+          <p class="footer__copyright">© 2024. Twinkle Toes</p>
         </div>
-        <div class="popup popup_registry-form">
-            <div class="popup__style">
-                <form class="popup__form" autocomplete="off">
-                    <h2 class="popup__title">
-                        Регистрация
-                    </h2>
-                    <label class="popup__label" for="email-reg">
-                        Ваша почта
-                    </label>
-                    <input
-                    class="popup__input"
-                    id="email-reg"
-                    type="email"
-                    placeholder="Введите почту"
-                    required
-                    >
-                    <label class="popup__label" for="password-registry">
-                        Введите пароль
-                    </label>
-                    <input
-                    minlength="8"
-                    class="popup__input"
-                    id="password-registry"
-                    type="password"
-                    placeholder="Придумайте пароль"
-                    required
-                    >
-                    <button class="popup__submit" type="submit">
-                        <p class="popup__submit-text">
-                            Готово
-                        </p>
-                    </button>
-                </form>
-                <img class="popup__close" src="<%=require('./images/Close-Icon.svg')%>" alt="закрыть"/>
-            </div>
+      </footer>
+      <template class="card-template">
+        <div class="card">
+          <img class="card__image" alt="картинка машины" />
+          <div class="card__info">
+            <h3 class="card__info-mark"></h3>
+            <p class="card__info-model"></p>
+          </div>
+          <button class="card__button-image"></button>
+          <div class="card__dark-overlay"></div>
         </div>
-        <div class="popup popup_card-image">
-            <div class="popup__image-container">
-                <img class="popup__image" src="" alt="закрыть"/>
-                <img class="popup__close popup__close_upside" src="<%=require('./images/Close-Icon.svg')%>" alt="закрыть"/>
-            </div>
+      </template>
+      <div class="popup popup_add-form">
+        <div class="popup__style">
+          <form class="popup__form" autocomplete="off">
+            <h2 class="popup__title">Добавление тачки</h2>
+            <label class="popup__label" for="car-image"> Машина </label>
+            <input
+              class="popup__input"
+              id="car-image"
+              type="url"
+              placeholder="Ссылка на изображение"
+              required
+              name="image"
+            />
+            <label class="popup__label" for="car-mark"> Марка </label>
+            <input
+              class="popup__input"
+              id="car-mark"
+              type="text"
+              placeholder="Марка машины"
+              required
+              name="mark"
+            />
+            <label class="popup__label" for="car-model"> Модель </label>
+            <input
+              class="popup__input"
+              id="car-model"
+              type="text"
+              placeholder="Модель машины"
+              required
+              name="model"
+            />
+            <button class="popup__submit" type="submit">
+              <p class="popup__submit-text">Добавить</p>
+            </button>
+          </form>
+          <img
+            class="popup__close"
+            src="<%=require('./images/Close-Icon.svg')%>"
+            alt="закрыть"
+          />
         </div>
-        <div class="fixed-block">
-            <div class="fixed-block__content">
-                <div class="fixed-block__user-auth">
-                    <button class="header__button header__button_state header__button_sign-in">
-                        Войти
-                    </button>
-                    <button class="header__button header__button_state header__button_registry">
-                        Регистрация
-                    </button>
-                </div>
-                <div class="control__buttons-container">
-                    <button class="control__button control__button_add-card">
-                        <img src="<%=require('./images/plus.svg')%>" class="control__add-image" alt="плюс"/>
-                        Добавить
-                    </button>
-                    <button class="control__button control__button_delete-card">
-                        <img src="<%=require('./images/Close-Icon.svg')%>" class="control__minus-image" alt="крестик"/>
-                        Убрать
-                    </button>
-                </div>
-            </div>
+      </div>
+      <div class="popup popup_sign-form">
+        <div class="popup__style">
+          <form class="popup__form" autocomplete="off">
+            <h2 class="popup__title">Вход в профиль</h2>
+            <label class="popup__label" for="email-sign-in"> Ваша почта </label>
+            <input
+              class="popup__input"
+              id="email-sign-in"
+              type="email"
+              placeholder="Введите почту"
+              required
+            />
+            <label class="popup__label" for="password-sign-in">
+              Введите пароль
+            </label>
+            <input
+              minlength="8"
+              class="popup__input"
+              id="password-sign-in"
+              type="password"
+              placeholder="Пароль профиля"
+              required
+            />
+            <button class="popup__submit" type="submit">
+              <p class="popup__submit-text">Войти</p>
+            </button>
+          </form>
+          <img
+            class="popup__close"
+            src="<%=require('./images/Close-Icon.svg')%>"
+            alt="закрыть"
+          />
         </div>
+      </div>
+      <div class="popup popup_registry-form">
+        <div class="popup__style">
+          <form class="popup__form" autocomplete="off">
+            <h2 class="popup__title">Регистрация</h2>
+            <label class="popup__label" for="email-reg"> Ваша почта </label>
+            <input
+              class="popup__input"
+              id="email-reg"
+              type="email"
+              placeholder="Введите почту"
+              required
+            />
+            <label class="popup__label" for="password-registry">
+              Введите пароль
+            </label>
+            <input
+              minlength="8"
+              class="popup__input"
+              id="password-registry"
+              type="password"
+              placeholder="Придумайте пароль"
+              required
+            />
+            <button class="popup__submit" type="submit">
+              <p class="popup__submit-text">Готово</p>
+            </button>
+          </form>
+          <img
+            class="popup__close"
+            src="<%=require('./images/Close-Icon.svg')%>"
+            alt="закрыть"
+          />
+        </div>
+      </div>
+      <div class="popup popup_card-image">
+        <div class="popup__image-container">
+          <img class="popup__image" src="" alt="закрыть" />
+          <img
+            class="popup__close popup__close_upside"
+            src="<%=require('./images/Close-Icon.svg')%>"
+            alt="закрыть"
+          />
+        </div>
+      </div>
+      <div class="fixed-block">
+        <div class="fixed-block__content">
+          <div class="fixed-block__user-auth">
+            <button
+              class="header__button header__button_state header__button_sign-in"
+            >
+              Войти
+            </button>
+            <button
+              class="header__button header__button_state header__button_registry"
+            >
+              Регистрация
+            </button>
+          </div>
+          <div class="control__buttons-container">
+            <button class="control__button control__button_add-card">
+              <img
+                src="<%=require('./images/plus.svg')%>"
+                class="control__add-image"
+                alt="плюс"
+              />
+              Добавить
+            </button>
+            <button class="control__button control__button_delete-card">
+              <img
+                src="<%=require('./images/Close-Icon.svg')%>"
+                class="control__minus-image"
+                alt="крестик"
+              />
+              Убрать
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
